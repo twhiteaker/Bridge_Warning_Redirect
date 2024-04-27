@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Bridge Warning Redirect | About</title>
+   <meta name="description" content="About  Bridge Warning Redirect">
+   <meta name="keywords" content="National Water Model, bridge">
+   <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+   <h1>About Bridge Warning Redirect</h1>
+   <p><a href="index.html">Demo</a></p>
+   <p><a href="https://github.com/twhiteaker/Bridge_Warning_Redirect" rel="noopener noreferrer">Bridge Warning Redirect on GitHub</a></p>
+   <p>This project demonstrates how to download forecasted streamflow and forward the data to a Web app that plots a time-enabled cross section showing bridges and water levels. 
+   </p>
+   <h2>Data Sources</h2>
+   <p>
+      Streamflow data originate from the NOAA's
+      <a rel="noopener noreferrer" href="https://water.noaa.gov/about/nwm">National Water Model (NWM)</a>.
+      The data are read using the
+      <a href="https://api.water.noaa.gov/nwps/v1/docs/" rel="noopener noreferrer">National Water Prediction Service (NWPS) API</a>.
+      This service provides access to the latest short range forecast.
+   </p>
+   <p>Bridge data originate from LiDAR data in Texas, available from <a href="https://tnris.org/" rel="noopener noreferrer">TxGIO</a>.  Data were analyzed
+      to determine bridge locations and ground surface elevations, with rough estimates used for deck thickness.
+   </p>
+   <h2>Usage</h2>
+   <p>This Web app accepts these inputs:</p>
+   <ul>
+      <li>
+         <strong>Bridge ID</strong> - A unique identifier assigned to a bridge upon extraction from LiDAR data.
+      </li>
+      <li>
+         <strong>Stream ID</strong> - The identifier for the National Water Model stream reach for which streamflow should be downloaded
+      </li>
+   </ul>
+   <p>
+      Use the input form and click <strong>Plot</strong> to retrieve the latest forecast and forward the data to the cross section plotter.
+      The plotter is a separate application not maintained in this repository or by this repository's owner.
+   </p>
+   <p><a href="LICENSE">LICENSE</a></p>
+</body>
+
+</html>
