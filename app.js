@@ -15,8 +15,8 @@ function showErr(err) {
 
 
 function forwardData(data) {
-   // Construct a URL like http://3.91.40.112:5000/xs/?uuid=fa114aec-3a81-404d-840d-cd84f154ed05&list_flows=250.4,0.4,0.4,0.4,0.4,1.4,2.4,3.4,10.4,20.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4&first_utc_time=2024-04-24T16:00:00
-   let url = new URL("http://3.91.40.112:5000/xs/?" + new URLSearchParams(data));
+   // Construct a URL like https://bridges.txdot.kisters.cloud/xs/?uuid=fa114aec-3a81-404d-840d-cd84f154ed05&list_flows=250.4,0.4,0.4,0.4,0.4,1.4,2.4,3.4,10.4,20.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4&first_utc_time=2024-04-24T16:00:00
+   let url = new URL("https://bridges.txdot.kisters.cloud/xs/?" + new URLSearchParams(data));
    // Redirect to the URL
    window.location = url;
 }
